@@ -1,0 +1,86 @@
+/* Full screen blue background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #6495ED; /* Cornflower blue */
+    font-family: Arial, sans-serif;
+}
+
+/* App container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header / Panel */
+.panel {
+    background-color: lightgoldenrodyellow;
+    border: 8px solid burlywood;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* Game board grid */
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: bisque;
+    border: 8px solid burlywood;
+    border-radius: 12px;
+    box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* Circles */
+.gameCircle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid black;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Player Colors */
+.player_0 {
+    background-color: white;
+}
+.player_1 {
+    background-color: red;
+}
+.player_2 {
+    background-color: blue;
+}
+
+/* Suggested Move Highlight */
+.suggested {
+    outline: 5px solid #90ee90; /* Light green */
+    outline-offset: -5px;
+    box-shadow: 0 0 10px #90ee90;
+}
+
+/* Button Styling */
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 4px solid burlywood;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
